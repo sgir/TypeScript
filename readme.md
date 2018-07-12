@@ -36,7 +36,16 @@
 
 ### TypeScript Basics
 #### Functions in TypeScript
+#### Objects in TypeScript
 
+``` 
+let icecream: {
+    flavor:string,
+    toppings: string[],
+    price: number,
+    getName(): string
+}    
+```
 #### Arrays
 
 
