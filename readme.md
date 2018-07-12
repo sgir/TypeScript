@@ -47,11 +47,11 @@ let icecream: {
 }    
 ```
 #### Tuples
-Tuple types allow you to express an array where the type of a fixed number of elements is known, but need not be the same
+Tuple types allow you to express an array where the type of a fixed number of elements is known, but need not be the same.
 
 #### Arrays
 
 
 #### Links
-https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
-https://www.typescriptlang.org/ 
+- https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
+- https://www.typescriptlang.org/ 
