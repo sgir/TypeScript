@@ -31,3 +31,10 @@ function myFunction2(...num:number[]) {
 myFunction2(1,2,3);
 myFunction2();//returns nothing
 // myFunction2(null);//returns null
+
+//Reduce with typescript
+const priceArray = [15,34,56,77];
+const sum = priceArray.reduce((previous, current) => { 
+  console.log(previous, '-', current);
+  return previous + current;
+}, 0);
