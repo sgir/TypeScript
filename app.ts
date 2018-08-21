@@ -82,7 +82,6 @@ console.log(ice3)
 
 let promotioncode: string = 'ICECREAM25'
 // promotioncode=null; error
-
 let promotioncode2: string | null = 'ICECREAM25'
 
 let weirdIceCreams = {
@@ -91,3 +90,18 @@ let weirdIceCreams = {
   three: 'blue'
 };
 
+//8. Default types in a function
+
+//define a function type, equivalent to defining an interface
+let sumOrder: (price: number, quantity: number) => number;
+
+//implementation 1
+sumOrder = (x,y) =>  x+y;
+console.log(sumOrder(1,2));
+
+//implementation 2
+sumOrder = (x,y) => x*y; 
+console.log(sumOrder(1,2));
+
+//making it a const forces you to define it right away.
+const newSumOrder = (price:number, quantity: number) :number => {return price*quantity};

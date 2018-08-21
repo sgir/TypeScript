@@ -80,3 +80,14 @@ var weirdIceCreams = {
     two: 'redbean',
     three: 'blue'
 };
+//8. Default types in a function
+//define a function type, equivalent to defining an interface
+var sumOrder;
+//implementation 1
+sumOrder = function (x, y) { return x + y; };
+console.log(sumOrder(1, 2));
+//implementation 2
+sumOrder = function (x, y) { return x * y; };
+console.log(sumOrder(1, 2));
+//making it a const forces you to define it right away.
+var newSumOrder = function (price, quantity) { return price * quantity; };
