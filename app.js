@@ -17,6 +17,10 @@ var misc = ['icecream', 'toppings'];
 var newPrice = 9;
 var allPrices = prices.concat([newPrice], misc);
 console.log(allPrices);
+var a = [1, 2, 3, 4];
+var b = [5, 6, 7, 8];
+var twoarrays = a.concat(b);
+console.log(twoarrays);
 //3. without spread syntax, use apply to spread array and pass as arguments
 function myFunction1(x, y, z) {
     console.log(x, y, z);
@@ -33,4 +37,17 @@ function myFunction2() {
 }
 myFunction2(1, 2, 3);
 myFunction2(); //returns nothing
-myFunction2(null); //returns null
+// myFunction2(null);//returns null
+//4. Reduce with typescript
+var priceArray = [15, 34, 56, 77];
+var sum = priceArray.reduce(function (previous, current) {
+    console.log(previous, '-', current);
+    return previous + current;
+}, 0);
+function sumofnumbers(a1, a2, a3) {
+    // return a1 + a2 + a3;
+    console.log(a1 + a2 + a3);
+}
+;
+sumofnumbers(1, 2, 3);
+//5. arguments

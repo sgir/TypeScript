@@ -17,6 +17,12 @@ const allPrices = [...prices, newPrice, ...misc];
 
 console.log(allPrices);
 
+const a = [1,2,3,4];
+const b = [5,6,7,8];
+
+const twoarrays = [...a, ...b];
+console.log(twoarrays);
+
 //3. without spread syntax, use apply to spread array and pass as arguments
 function myFunction1(x:any, y:any, z:any) {
     console.log(x, y,z);
@@ -32,9 +38,20 @@ myFunction2(1,2,3);
 myFunction2();//returns nothing
 // myFunction2(null);//returns null
 
-//Reduce with typescript
+//4. Reduce with typescript
 const priceArray = [15,34,56,77];
 const sum = priceArray.reduce((previous, current) => { 
   console.log(previous, '-', current);
   return previous + current;
 }, 0);
+
+function sumofnumbers (a1: number, a2 : number, a3: number){
+  // return a1 + a2 + a3;
+  console.log(a1 +a2 +a3);
+};
+sumofnumbers(1,2,3);
+
+//5. arguments
+
+
+
