@@ -105,3 +105,19 @@ console.log(sumOrder(1,2));
 
 //making it a const forces you to define it right away.
 const newSumOrder = (price:number, quantity: number) :number => {return price*quantity};
+
+// 9. Default types in a function with optional parameter
+
+//define function contract
+let sumOrderOptional: (price: number, quantity?: number) => number;
+
+//definition 1
+sumOrderOptional = (x,y) =>{
+  const q = y || 1;
+  return x/q;
+}
+console.log(sumOrderOptional(879));
+
+// simpler version 1
+sumOrderOptional = (x, y = 1)=> x/y;
+console.log(sumOrderOptional(999));

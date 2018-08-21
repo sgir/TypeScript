@@ -91,3 +91,18 @@ sumOrder = function (x, y) { return x * y; };
 console.log(sumOrder(1, 2));
 //making it a const forces you to define it right away.
 var newSumOrder = function (price, quantity) { return price * quantity; };
+// 9. Default types in a function with optional parameter
+//define function contract
+var sumOrderOptional;
+//definition 1
+sumOrderOptional = function (x, y) {
+    var q = y || 1;
+    return x / q;
+};
+console.log(sumOrderOptional(879));
+// simpler version 1
+sumOrderOptional = function (x, y) {
+    if (y === void 0) { y = 1; }
+    return x / y;
+};
+console.log(sumOrderOptional(999));
