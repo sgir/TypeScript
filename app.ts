@@ -30,4 +30,4 @@ function myFunction2(...num:number[]) {
 }
 myFunction2(1,2,3);
 myFunction2();//returns nothing
-myFunction2(null);//returns null
+// myFunction2(null);//returns null
