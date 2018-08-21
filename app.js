@@ -66,8 +66,17 @@ function order(_a) {
 }
 order(icecream);
 // order(froyo); //undefined undefined, TypeError: Cannot read property 'length' of undefined
-//6. Destructuring an array
+//6. Destructuring a structure -  array
 var flavors = ['vanilla', 'choco', 'strawberry', 'mint choco'];
 var ice2 = flavors[1], ice3 = flavors[2];
 console.log(ice2);
 console.log(ice3);
+//7. Default Types for a variable
+var promotioncode = 'ICECREAM25';
+// promotioncode=null; error
+var promotioncode2 = 'ICECREAM25';
+var weirdIceCreams = {
+    one: 'matcha',
+    two: 'redbean',
+    three: 'blue'
+};
