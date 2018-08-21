@@ -51,7 +51,29 @@ function sumofnumbers (a1: number, a2 : number, a3: number){
 };
 sumofnumbers(1,2,3);
 
-//5. arguments
+//5. Destructuring a structure  - object
 
+const icecream = {
+  name: 'matcha',
+  toppings: ['gummy bears', 'cashews', 'chips']
+};
 
+const froyo = {
+  name2: 'matcha',
+  toppings2: ['gummy bears', 'cashews', 'chips']
+};
 
+function order({name: mychoice, toppings: mytoppings}){
+  console.log(mychoice, mytoppings);
+  console.log(mytoppings.length)
+}
+
+order(icecream);
+
+// order(froyo); //undefined undefined, TypeError: Cannot read property 'length' of undefined
+
+//6. Destructuring an array
+const flavors = ['vanilla','choco','strawberry','mint choco'];
+const [, ice2, ice3]= flavors;
+console.log(ice2);
+console.log(ice3)
