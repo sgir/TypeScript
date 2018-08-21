@@ -121,3 +121,5 @@ console.log(sumOrderOptional(879));
 // simpler version 1
 sumOrderOptional = (x, y = 1)=> x/y;
 console.log(sumOrderOptional(999));
+
+
